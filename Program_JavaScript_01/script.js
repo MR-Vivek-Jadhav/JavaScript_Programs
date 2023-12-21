@@ -112,3 +112,25 @@ console.log("After Swapping A :-",A);
 
 
 // Q.6 >>>>>>>>REMOVE ; AND , FROM THE STRING>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+
+
+
+
+
+
+
+// *********calculate the Area of trangle*****************************
+
+
+function areOfTrangle(base,height){
+
+    return (base * height ) / 2
+}
+
+console.log(`area of trangle is :- ${areOfTrangle(5,10)} `);
+
