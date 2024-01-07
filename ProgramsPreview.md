@@ -142,5 +142,59 @@ Arr.forEach(function(e,i){
     console.log(String.fromCharCode(start++),i+1);
 })
 
+
+
+// ******CHECK NUM IS + , _ , OR zERO*********************************
+
+let Input=document.createElement("input")
+
+Input.setAttribute=("type","text")
+
+document.body.append(Input)
+
+let btn=document.createElement("button")
+
+btn.innerHTML="click Me"
+
+document.body.append(btn)
+
+let val
+
+btn.addEventListener("click",function(){
+   val=(Input.value)
+    console.log(Math.sign(val,"Math.sign"));
+})
+
+// or 
+
+btn.addEventListener("click",function(){
+    if(val > 0){
+        console.log(`${val} is Positive NUmber`);
+    }else if(val < 0){
+        console.log(`${val} is Negative Number`);
+    }else if(val == 0) {
+        console.log(`${val} is Zero`);
+    }else{
+        console.log("not a Number");
+    }
+})
+
+btn.addEventListener("click",function(){
+    switch (val) {
+        case (val < 0):
+            console.log(val,"negative");
+            break;
+            case(val>0):
+                      console.log("greater");
+            break;
+    
+        default:console.log("default");
+            break;
+    }
+    
+    
+})
+
+
         ```
           
