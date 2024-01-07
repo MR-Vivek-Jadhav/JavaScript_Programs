@@ -53,7 +53,7 @@ Arr1.push('laxman')
 
 Arr1.push('saurabh')
 
-Arr1.push('SAMIksha')
+Arr1.push('vicky')
 
 console.log(Arr1,typeof Arr1);
 
@@ -133,4 +133,16 @@ function areOfTrangle(base,height){
 }
 
 console.log(`area of trangle is :- ${areOfTrangle(5,10)} `);
+
+
+// *************Print A to Z************************
+
+let Arr=[...new Array(26)]
+
+start=65
+
+Arr.forEach(function(e,i){
+    console.log(String.fromCharCode(start++),i+1);
+})
+
 
