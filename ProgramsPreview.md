@@ -132,5 +132,15 @@ console.log(`area of trangle is :- ${areOfTrangle(5,10)} `);
 
 
 
+// *************Print A to Z************************
+
+let Arr=[...new Array(26)]
+
+start=65
+
+Arr.forEach(function(e,i){
+    console.log(String.fromCharCode(start++),i+1);
+})
+
         ```
           
