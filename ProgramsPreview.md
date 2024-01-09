@@ -144,7 +144,8 @@ Arr.forEach(function(e,i){
 
 
 
-// ******CHECK NUM IS + , _ , OR zERO*********************************
+// ******CHECK NUM IS + , _ , OR 
+// zERO*********************************
 
 let Input=document.createElement("input")
 

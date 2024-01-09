@@ -192,7 +192,33 @@ btn.addEventListener("click",function(){
     
         default:console.log("default");
             break;
-    }
-    
-    
+    }  
 })
+
+// ***********getData from Api*****************************
+
+async function getApi(){
+    let val=await fetch("https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json")
+   let  ResultResponse=await val.json()
+console.log(ResultResponse.usd.inr);
+
+}
+getApi()
+
+
+
+// **********check number even or odd***********************************
+
+     let NumBer = 6
+
+     if(NumBer%2==0){
+        console.log(`${NumBer} is even Number`);
+     }else if (NumBer%2==1){
+        console.log(`${NumBer} is Odd Number`);
+     }
+
+     let ternary = NumBer%2==0 ? `${NumBer} is Even Number BY Ternary` : "Odd NUmber"
+
+     console.log(ternary);
+
+    //  *****************************
