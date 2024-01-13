@@ -189,7 +189,7 @@ btn.addEventListener("click",function(){
 async function getApi(){
     let val=await fetch("https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json")
    let  ResultResponse=await val.json()
-console.log(ResultResponse.usd.inr);
+console.log("Fetch Async :-",ResultResponse.usd.inr);
 
 }
 getApi()
@@ -246,3 +246,16 @@ console.log(fact);
 
 
 // ***********************************
+
+function Table(UserInput){
+
+       for (let i = 1 ; i <= 10; i++) {
+
+        console.log(`${i * UserInput}`);
+        
+       }
+
+}
+
+Table(10)
+
