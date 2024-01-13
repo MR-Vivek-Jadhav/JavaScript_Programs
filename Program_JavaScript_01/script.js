@@ -259,3 +259,5 @@ function Table(UserInput){
 
 Table(10)
 
+// ************Armstrong Number*************
+
