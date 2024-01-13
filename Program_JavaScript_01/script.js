@@ -124,6 +124,7 @@ console.log("After Swapping A :-",A);
 
 
 
+
 // *********calculate the Area of trangle*****************************
 
 
@@ -179,23 +180,11 @@ btn.addEventListener("click",function(){
     }else{
         console.log("not a Number");
     }
+    Input.value=''
 })
 
-btn.addEventListener("click",function(){
-    switch (val) {
-        case (val < 0):
-            console.log(val,"negative");
-            break;
-            case(val>0):
-                      console.log("greater");
-            break;
-    
-        default:console.log("default");
-            break;
-    }  
-})
+// ***********getData*****************************
 
-// ***********getData from Api*****************************
 
 async function getApi(){
     let val=await fetch("https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json")
@@ -222,3 +211,38 @@ getApi()
      console.log(ternary);
 
     //  *****************************
+
+    let PrimeNUmberCheck=4
+
+    if(PrimeNUmberCheck==1){
+        console.log(`${PrimeNUmberCheck} is neither Prime NUmber nor Composite `);
+    }else{
+        for (let i = 2; i < PrimeNUmberCheck; i++) {
+            if(PrimeNUmberCheck%i==1){
+                console.log("prime NUmber");
+                break;
+            }else if(PrimeNUmberCheck%i==0){
+                console.log("not me Prime NUmber");
+            }
+        }
+    }
+
+    // ******CHECK LARGEST NUMBER AMONG THREE NUMBER******************
+
+
+    console.log(Math.max(50,70,90));
+
+
+    // *******Find out The Factorial *****************
+
+let fact=1
+
+factNumber=10
+
+for (let i = 1; i <=factNumber; i++) {
+    fact=  i * fact;
+}
+console.log(fact);
+
+
+// ***********************************
